@@ -14,7 +14,7 @@ public class UseTest {
         System.setProperty("webdriver.chrome.driver","Driver/chromedriver");
 
         WebDriver driver= new ChromeDriver();
-       driver.get("https://amazon.com/");
+       driver.get("https://www.amazon.com/");
 
         String url="https://www.amazon.com/";
         driver.navigate().to(url);
