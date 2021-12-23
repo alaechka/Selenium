@@ -21,13 +21,13 @@ public class hw2 {
        WebElement loginPassBox=practice.getDriver().findElement(loginPassLocator);
        loginPassBox.sendKeys("abcd@1234");
 
-       //String loginButtonTag="button";
-       //By loginButtonLocator =By.tagName(loginButtonTag);
-       //WebElement loginButton=practice.getDriver().findElement(loginButtonLocator);
-       //loginButton.click();
+       String loginButtonTag="button";
+       By loginButtonLocator =By.tagName(loginButtonTag);
+       WebElement loginButton=practice.getDriver().findElement(loginButtonLocator);
+       loginButton.click();
 
         practice.sleep(2);
-        By locatorUsingLinkText=By.linkText("Найдите свой аккаунт и войдите в систему.");
+        By locatorUsingLinkText=By.linkText("Find your account and log in.");
         WebElement createPageLink=practice.getDriver().findElement(locatorUsingLinkText);
         boolean isCreatepageDisplaed =createPageLink.isDisplayed();
         Assert.assertTrue(isCreatepageDisplaed,"say something");
